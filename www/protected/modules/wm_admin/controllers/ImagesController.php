@@ -4,12 +4,12 @@ class ImagesController extends AdminController
 {
 
 
-	public function actionDelete($id)
+	public function actionDeleteNews($id)
 	{
 		if ( $id ) {
-			$img = AkirosInfoImages::model()->findByPk($id);
-			UploadFile::deleteFile('AkirosInfoImages',$id, $img->src);
-			AkirosInfoImages::model()->deleteByPk($id);
+			$img = NewsImage::model()->findByPk($id);
+			UploadFile::deleteFile('News',$img->news_id, $img->src);
+			NewsImage::model()->deleteByPk($id);
 			echo '{}';
 		}
 	}

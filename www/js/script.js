@@ -205,6 +205,7 @@
 		$.cookie("filtr-region", null, { path: '/' });
 		$.cookie("filtr-find", null, { path: '/' });
 		$.cookie("filtr-main", null, { path: '/' });
+		$.cookie("filtr-year", null, { path: '/' });
 
 	}
 

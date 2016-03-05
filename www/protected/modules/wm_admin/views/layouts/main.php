@@ -39,7 +39,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li <?=( $this->id == 'default' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/news'); ?>">Новости</a></li>
+            <li <?=( $this->id == 'news' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/news'); ?>">Новости</a></li>
           </ul>
 
 			<ul class="nav navbar-nav navbar-right">
