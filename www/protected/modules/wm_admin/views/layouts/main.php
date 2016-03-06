@@ -41,6 +41,7 @@
           <ul class="nav navbar-nav">
             <li <?=( $this->id == 'news' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/news'); ?>">Новости</a></li>
             <li <?=( $this->id == 'jury' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/jury'); ?>">Жюри</a></li>
+            <li <?=( $this->id == 'press' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/press'); ?>">Пресса о нас</a></li>
 
           </ul>
 

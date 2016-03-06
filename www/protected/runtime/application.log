@@ -19,3 +19,7 @@ HTTP_REFERER=http://www.work-8womenfest.ru/wm_admin/jury/edit
 2016/03/06 11:31:34 [warning] [application] Failed to set unsafe attribute "id" of "News".
 2016/03/06 11:32:01 [warning] [application] Failed to set unsafe attribute "id" of "Jury".
 2016/03/06 11:35:11 [warning] [application] Failed to set unsafe attribute "id" of "Jury".
+2016/03/06 11:49:02 [warning] [application] Failed to set unsafe attribute "link" of "News".
+2016/03/06 11:49:41 [warning] [application] Failed to set unsafe attribute "name" of "Press".
+2016/03/06 11:52:06 [warning] [application] Failed to set unsafe attribute "id" of "Press".
+2016/03/06 11:52:23 [warning] [application] Failed to set unsafe attribute "id" of "Press".
