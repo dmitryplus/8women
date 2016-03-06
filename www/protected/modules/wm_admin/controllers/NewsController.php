@@ -19,7 +19,7 @@ class NewsController extends AdminController
 					UploadFile::deleteFile('News',$id, $one->image_src);
 					foreach ( $one->newsImages as $img ) {
 						UploadFile::deleteFile('News',$id, $img->src);
-						newsImage::model()->deleteByPk($img->id);
+						NewsImage::model()->deleteByPk($img->id);
 					}
 					News::model()->deleteByPk( $id );
 					

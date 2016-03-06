@@ -14,4 +14,14 @@ class ImagesController extends AdminController
 		}
 	}
 
+	public function actionDeleteFilm($id)
+	{
+		if ( $id ) {
+			$img = FilmImage::model()->findByPk($id);
+			UploadFile::deleteFile('Film',$img->film_id, $img->src);
+			FilmImage::model()->deleteByPk($id);
+			echo '{}';
+		}
+	}
+
 }

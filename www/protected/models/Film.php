@@ -40,8 +40,7 @@ class Film extends CActiveRecord
 		return array(
 			array('name', 'required'),
 			array('year', 'numerical', 'integerOnly'=>true),
-			array('name, info, image_src, producer_name', 'length', 'max'=>255),
-			array('producer_photo', 'length', 'max'=>45),
+			array('name, info, image_src, producer_name, producer_photo', 'length', 'max'=>255),
 			array('tech_info, description, trailer, producer_filmograf, producer_biograf', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
