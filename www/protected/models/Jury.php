@@ -7,7 +7,7 @@
  * @property integer $id
  * @property string $name
  * @property string $description
- * @property string $img_src
+ * @property string $image_src
  * @property string $content
  */
 class Jury extends CActiveRecord
@@ -29,11 +29,11 @@ class Jury extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('name, description, img_src', 'length', 'max'=>255),
+			array('name, description, image_src', 'length', 'max'=>255),
 			array('content', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, description, img_src, content', 'safe', 'on'=>'search'),
+			array('id, name, description, image_src, content', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,7 +57,7 @@ class Jury extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'description' => 'Description',
-			'img_src' => 'Img Src',
+			'image_src' => 'Image Src',
 			'content' => 'Content',
 		);
 	}
@@ -83,7 +83,7 @@ class Jury extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('description',$this->description,true);
-		$criteria->compare('img_src',$this->img_src,true);
+		$criteria->compare('image_src',$this->image_src,true);
 		$criteria->compare('content',$this->content,true);
 
 		return new CActiveDataProvider($this, array(

@@ -8,95 +8,72 @@ class JuryController extends AdminController
 	public function actionIndex($id = false)
 	{
 
-//		$request = Yii::app()->request;
-//		if ( $request->isPostRequest ) {
-//
-//
-//				if ( $_POST['ajax'] == 'del-news' ) {
-//
-//					$id = $_POST['id'];
-//					$one = News::model()->findByPk( $id );
-//					UploadFile::deleteFile('News',$id, $one->image_src);
-//					foreach ( $one->newsImages as $img ) {
-//						UploadFile::deleteFile('News',$id, $img->src);
-//						newsImage::model()->deleteByPk($img->id);
-//					}
-//					News::model()->deleteByPk( $id );
-//					
-//					echo "ok"; exit;
-//				}
-//				
-//
-//
-//			if ( $_POST['News']['id'] ) {
-//				$one = News::model()->findByPk($_POST['News']['id']);
-//			} else {
-//				$one = new News;
-//			}
-//
-//			$one->attributes = $_POST['News'];
-//
-//			if ( $_POST['News']['id'] ) {
-//				$one->update();
-//			} else {
-//				$one->save();
-//			}
-//
-//			if ( $_FILES['image_src']['name'] && $one->image_src) {
-//				UploadFile::deleteFile('News',$one->id, $one->image_src);
-//			}
-//
-//			if ( $_FILES['image_src']['name']) {
-//				$one->image_src = UploadFile::save('News',$one->id,'image_src' );
-//				$one->update();
-//			}
-//
-//			if ( $_FILES['gallery']['name'][0] ) { 
-//				foreach ( UploadFile::saves('News',$one->id,'gallery') as $img){
-//					$link = new NewsImage;
-//					$link->news_id = $one->id;
-//					$link->src = $img;
-//					$link->save();
-//				}
-//
-//			}
+		$request = Yii::app()->request;
+		if ( $request->isPostRequest ) {
 
-		//	print_R( $_POST );
-		//	print_R( $_FILES );
 
-		//	echo "error"; exit;
+				if ( $_POST['ajax'] == 'del-jury' ) {
+
+					$id = $_POST['id'];
+					$one = Jury::model()->findByPk( $id );
+					UploadFile::deleteFile('Jury',$id, $one->image_src);
+					Jury::model()->deleteByPk( $id );
+					
+					echo "ok"; exit;
+				}
+
+
+			if ( $_POST['Jury']['id'] ) {
+				$one = Jury::model()->findByPk($_POST['Jury']['id']);
+			} else {
+				$one = new Jury;
+			}
+
+			$one->attributes = $_POST['Jury'];
+
+			if ( $_POST['Jury']['id'] ) {
+				$one->update();
+			} else {
+				$one->save();
+			}
+
+			if ( $_FILES['image_src']['name'] && $one->image_src) {
+				UploadFile::deleteFile('Jury',$one->id, $one->image_src);
+			}
+
+			if ( $_FILES['image_src']['name']) {
+				$one->image_src = UploadFile::save('Jury',$one->id,'image_src' );
+				$one->update();
+			}
+
+
+
+//			print_R( $_POST );
+//			print_R( $_FILES );
+
+//			echo "error"; exit;
 			$this->redirect( Yii::app()->getBaseUrl(true).'/wm_admin/jury' );
 
 		}
 
 
 
-//		$criteria = new CDbCriteria;
-//		$criteria->select = '*';
-//		$criteria->alias = 'news';
-//
-//		if ( $_COOKIE['filtr-find'] ) {
-//			$criteria->addSearchCondition("news.name", $_COOKIE['filtr-find'], true, 'OR', 'LIKE');
-//			$criteria->addSearchCondition("news.description", $_COOKIE['filtr-find'], true, 'OR', 'LIKE');
-//			$criteria->addSearchCondition("news.content", $_COOKIE['filtr-find'], true, 'OR', 'LIKE');
-//		}
-//
-//		if ( $_COOKIE['filtr-year'] ) { 
-//			$criteria->addcondition("DATE_FORMAT(news.date,'%Y')=".$_COOKIE['filtr-year']);
-//		
-//		}
-//
-//
-//
-//		$criteria->order = 'news.date DESC';
-//
-//		$this->pages = new CPagination(News::model()->count($criteria));		
-//		$this->pages->pageSize = Yii::app()->params['perpage'];
-//		$this->pages->applyLimit($criteria);
-//		$this->pages->route = "/wm_admin/news";
-//		$this->pages->params = array();
-//		$this->offset = $this->pages->getOffset();
-//		$this->allRec = News::model()->findAll($criteria);	
+		$criteria = new CDbCriteria;
+		$criteria->select = '*';
+		$criteria->alias = 'jury';
+
+		if ( $_COOKIE['filtr-find'] ) {
+			$criteria->addSearchCondition("jury.name", $_COOKIE['filtr-find'], true, 'OR', 'LIKE');
+			$criteria->addSearchCondition("jury.description", $_COOKIE['filtr-find'], true, 'OR', 'LIKE');
+		}
+
+		$this->pages = new CPagination(Jury::model()->count($criteria));		
+		$this->pages->pageSize = Yii::app()->params['perpage'];
+		$this->pages->applyLimit($criteria);
+		$this->pages->route = "/wm_admin/jury";
+		$this->pages->params = array();
+		$this->offset = $this->pages->getOffset();
+		$this->allRec = Jury::model()->findAll($criteria);	
 
 		$this->render('index');
 

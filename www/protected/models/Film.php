@@ -7,7 +7,7 @@
  * @property integer $id
  * @property string $name
  * @property string $info
- * @property string $img_src
+ * @property string $image_src
  * @property integer $year
  * @property string $tech_info
  * @property string $description
@@ -40,12 +40,12 @@ class Film extends CActiveRecord
 		return array(
 			array('name', 'required'),
 			array('year', 'numerical', 'integerOnly'=>true),
-			array('name, info, img_src, producer_name', 'length', 'max'=>255),
+			array('name, info, image_src, producer_name', 'length', 'max'=>255),
 			array('producer_photo', 'length', 'max'=>45),
 			array('tech_info, description, trailer, producer_filmograf, producer_biograf', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, info, img_src, year, tech_info, description, trailer, producer_name, producer_photo, producer_filmograf, producer_biograf', 'safe', 'on'=>'search'),
+			array('id, name, info, image_src, year, tech_info, description, trailer, producer_name, producer_photo, producer_filmograf, producer_biograf', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,7 +70,7 @@ class Film extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'info' => 'Info',
-			'img_src' => 'Img Src',
+			'image_src' => 'Image Src',
 			'year' => 'Year',
 			'tech_info' => 'Tech Info',
 			'description' => 'Description',
@@ -103,7 +103,7 @@ class Film extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('info',$this->info,true);
-		$criteria->compare('img_src',$this->img_src,true);
+		$criteria->compare('image_src',$this->image_src,true);
 		$criteria->compare('year',$this->year);
 		$criteria->compare('tech_info',$this->tech_info,true);
 		$criteria->compare('description',$this->description,true);

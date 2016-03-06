@@ -40,6 +40,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li <?=( $this->id == 'news' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/news'); ?>">Новости</a></li>
+            <li <?=( $this->id == 'jury' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/jury'); ?>">Жюри</a></li>
+
           </ul>
 
 			<ul class="nav navbar-nav navbar-right">
