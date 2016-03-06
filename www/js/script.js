@@ -27,7 +27,16 @@
 	initialPreviewConfigBlock = [];
 	}
 
+	if ( typeof initialPreviewAnketa === 'undefined' ) { 
+	initialPreviewAnketa = [];
+	}
 
+    $("#anketa").fileinput({
+        initialPreview: initialPreviewAnketa,
+        showCaption: true,
+        showRemove: false,
+        showUpload: false
+	});
 
     $("#photo").fileinput({
         initialPreview: initialPreviewPic,

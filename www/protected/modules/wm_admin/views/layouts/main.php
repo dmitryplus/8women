@@ -46,6 +46,7 @@
 
             <li <?=( $this->id == 'film' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/film'); ?>">Каталог фильмов</a></li>
 
+            <li <?=( $this->id == 'contest' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/contest'); ?>">Конкурс</a></li>
 
             <li <?=( $this->id == 'press' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/press'); ?>">Пресса о нас</a></li>
 

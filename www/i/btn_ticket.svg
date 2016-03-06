@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 50">
+  <defs>
+    <style>
+      .cls-1 { fill: none; stroke: #cee0dc; stroke-width: 2px; fill-rule: evenodd; }
+    </style>
+  </defs>
+  <path id="btn_ticket" d="M1 1h153.12L164 25.14 154.12 49H1V1z" class="cls-1"/>
+</svg>
