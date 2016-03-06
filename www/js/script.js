@@ -6,7 +6,8 @@
 	// подключаем редактор
 	tinymce.init({"height":600, "language":"ru","force_br_newlines":true,"force_p_newlines":true,"relative_urls":false,"extended_valid_elements":"i[class],span[class]","forced_root_block":"","plugins":["advlist autolink lists link image charmap print preview anchor","searchreplace visualblocks code fullscreen","insertdatetime media table contextmenu paste textcolor"],"toolbar":"insertfile undo redo | styleselect | bold italic | forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link ","selector":"#form_template_text"});
 
-	$('#datetimepicker1').datetimepicker({ locale: 'ru', format: 'YYYY-MM-DD HH:mm:ss', defaultDate: new Date  });
+	$('#datetimepicker1').datetimepicker({ locale: 'ru', format: 'YYYY-MM-DD HH:mm', defaultDate: new Date  });
+
 
 	$("input[type=\"checkbox\"]").bootstrapSwitch();
 
@@ -191,6 +192,7 @@
 		});
 	}
 
+	MakeDelButton( "program", "del-program", "Удалить мероприятие?", "Мероприятие удалено", "Ошибка удаления мероприятия" );
 	MakeDelButton( "press", "del-press", "Удалить ссылку?", "Ссылка удалена", "Ошибка удаления ссылки" );
 	MakeDelButton( "jury", "del-jury", "Удалить запись?", "Запись удалена", "Ошибка удаления записи" );
 	MakeDelButton( "news", "del-news", "Удалить новость?", "Новость удалена", "Ошибка удаления новости" );

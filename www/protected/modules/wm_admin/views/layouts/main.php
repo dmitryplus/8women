@@ -43,6 +43,9 @@
             <li <?=( $this->id == 'jury' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/jury'); ?>">Жюри</a></li>
             <li <?=( $this->id == 'press' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/press'); ?>">Пресса о нас</a></li>
 
+            <li <?=( $this->id == 'program' ? 'class="active"' : '')?>><a href="<?php echo Yii::app()->createUrl('wm_admin/program'); ?>">Программа фестиваля</a></li>
+
+
           </ul>
 
 			<ul class="nav navbar-nav navbar-right">

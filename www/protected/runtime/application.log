@@ -23,3 +23,4 @@ HTTP_REFERER=http://www.work-8womenfest.ru/wm_admin/jury/edit
 2016/03/06 11:49:41 [warning] [application] Failed to set unsafe attribute "name" of "Press".
 2016/03/06 11:52:06 [warning] [application] Failed to set unsafe attribute "id" of "Press".
 2016/03/06 11:52:23 [warning] [application] Failed to set unsafe attribute "id" of "Press".
+2016/03/06 12:17:42 [warning] [application] Failed to set unsafe attribute "id" of "Program".
