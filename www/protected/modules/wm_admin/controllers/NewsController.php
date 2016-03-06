@@ -91,7 +91,7 @@ class NewsController extends AdminController
 		$criteria->order = 'news.date DESC';
 
 		$this->pages = new CPagination(News::model()->count($criteria));		
-		$this->pages->pageSize=10;
+		$this->pages->pageSize = Yii::app()->params['perpage'];
 		$this->pages->applyLimit($criteria);
 		$this->pages->route = "/wm_admin/news";
 		$this->pages->params = array();

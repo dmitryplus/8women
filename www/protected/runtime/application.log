@@ -1482,3 +1482,51 @@ Stack trace:
 REQUEST_URI=/wm_admin/news
 HTTP_REFERER=http://www.work-8womenfest.ru/wm_admin/news
 ---
+2016/03/06 10:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\www.work-8womenfest.ru\www\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin
+---
+2016/03/06 10:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\www.work-8womenfest.ru\www\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin
+---
+2016/03/06 10:44:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wm_admi".' in D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wm_admi')
+#1 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\www.work-8womenfest.ru\www\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/wm_admi
+---
+2016/03/06 10:45:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wm_admi".' in D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wm_admi')
+#1 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\www.work-8womenfest.ru\www\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/wm_admi
+---
+2016/03/06 10:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wm_admi".' in D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wm_admi')
+#1 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\www.work-8womenfest.ru\www\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/wm_admi
+---
+2016/03/06 10:45:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wm_admi".' in D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wm_admi')
+#1 D:\OpenServer\domains\www.work-8womenfest.ru\www\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\www.work-8womenfest.ru\www\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/wm_admi
+---
